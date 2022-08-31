@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="reset.css">
     <title>Document</title>
 </head>
 <body>
     <form>
         <fieldset>
             <legend> Cadastro </legend>
-        <div>
+        <div class="textInputs">
             <label for="name"> Nome  </label>
-            <input type="text" id="name">
+            <input type="text">
         </div>
-        <div>
+        <div class="textInputs">
             <label for="email"> E-mail</label>
-            <input type="text" id="email">
+            <input type="text">
         </div>
-        <div>
+        <div class="textInputs">
             <label for="birth"> Data de nascimento </label>
-            <input type="text" id="birth">
+            <input type="text">
         </div>
         <div class="check">
             <label for="home"> Residência :</label>
@@ -29,7 +30,7 @@
             <input type="checkbox" name="home" id="predioinput"> Prédio
         </div>
         <div class="buttons">
-            <button id="salvar" onclick="salvar()"> Salvar </button> <button id="limpar"> Limpar </button>
+            <input type="submit" id="salvar" onclick="salvar()" value="Salvar"> <input type="submit" id="limpar" value="Limpar">
         </div>
         
     </fieldset>
